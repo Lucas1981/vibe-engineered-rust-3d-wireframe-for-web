@@ -1,4 +1,4 @@
-use crate::graphics::{Graphics, Screen};
+use crate::graphics::Graphics;
 use crate::object3d::{Object3D, Vec3};
 
 /// Minimal wireframe renderer: camera at the origin looking down −Z, FOV 90°.
@@ -16,18 +16,16 @@ impl Engine {
     }
 
     /// Clear the screen and draw every object as a wireframe.
-    /// `overlay` runs after objects (used for the temporary vertical-line test).
-    pub fn render(&self, ui: &mut egui::Ui, objects: &[Object3D], overlay: impl FnOnce(&Screen)) {
+    pub fn render(&self, ui: &mut egui::Ui, objects: &[Object3D]) {
         self.graphics.render(ui, |screen| {
             for object in objects {
                 draw_wireframe(screen, object);
             }
-            overlay(screen);
         });
     }
 }
 
-fn draw_wireframe(screen: &Screen, object: &Object3D) {
+fn draw_wireframe(screen: &crate::graphics::Screen, object: &Object3D) {
     let w = screen.width();
     let h = screen.height();
     let projected: Vec<(f32, f32)> = object.vlist.iter().map(|v| project(*v, w, h)).collect();
