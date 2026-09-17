@@ -1,5 +1,7 @@
 # Vibe Enginereed Rust 3D Wireframe for Wasm
 
+<img width="1468" height="723" alt="Screenshot 2026-09-17 at 19 39 00" src="https://github.com/user-attachments/assets/10934d42-8c38-4480-99ca-3cf6ccd9d31f" />
+
 So this project was meant to understand better how you can build a 3D application in Rust with Wasm as the sole target, while making use of Egui as the GUI motor.
 
 The steps to build this were outlined in the AGENTS.md file. We built it up slowly. I wanted to keep the engine itself as simple as possible, not bothering yet with camera, dynamic FOV, solid objects, rasterization, lighting or even clipping or culling. I didn't even want to use matrix multiplications here just to keep things as simple as I could. I didn't even want to add rotation controls - but I couldn't resist.
