@@ -5,7 +5,7 @@ This project will contain a very simple 3D wireframe renderer, displaying a toru
 Here are the steps in which we will set this up:
 
 1. [x] We will scaffold the project. We will use `egui` for the UI layer and `wgpu` for graphics. We will have to set up the project such that we target only compilation for Wasm that can run as a web app, no need to target for native build. Create `scaffold.sh` and `build-and-run.sh` recording the setup/`cargo run` commands, with brief comments on terse flags. Create a `./check.sh` file as well, where we can run fmt and clippy. Remember build and run should also build the Wasm target and serve it.
-2. [ ] We will add a class that can handle graphics. It should instantiate the screen, rendering and drawing lines. To test it, we should instantiate the screen and draw a vertical line
+2. [x] We will add a class that can handle graphics. It should instantiate the screen, rendering and drawing lines. To test it, we should instantiate the screen and draw a vertical line
 3. [ ] We will have to build support for 3D objects. They should contain a vlist and plist for the vertices and the polygons with referents to the vertex list, building up each polygon based on them. Each object can have several polygons that all point to entries in the same vlist. The object should also have a color, x and y.
 4. [ ] We will add a simple 3d rendering engine:
    - It should handle only wireframe
