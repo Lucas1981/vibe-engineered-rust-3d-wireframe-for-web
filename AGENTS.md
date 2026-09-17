@@ -15,8 +15,9 @@ Here are the steps in which we will set this up:
    - We can assume that no object will ever exceed the view frustrum, so no need to think about clipping or culling of any kind.
    - The engine should clear the screen and render any object each frame.
    - We can translate from object space right down to screen space in one go, keeping it as short as we can.
-5. [x] We will build a class that can yield a torus object. We can base it off the `resources/create-rings.js` file. Let's make sure it is indeed configurable in terms of sides, turns, thickness, reach and color. Since this is wireframe, we only need one color.
+5. [x] We will build a class that can yield a torus object. We can base it off the `resources/create-ring.js` file. Let's make sure it is indeed configurable in terms of sides, turns, thickness, reach and color. Since this is wireframe, we only need one color.
 6. [x] We will no longer show the line on the screen but we will show an instance of the Torus as a 3D object, projected onto the screen.
 7. [x] We will add UI controls to our screen with which we can control the sides, turns, thickness, reach and color. These must all be numeric inputs except for the color which can be a string input accepting a hexadecimal value. If we see it is not a proper 6-hex value, we an default the chosen color to white.
 8. [x] Each time the user changes one of the UI inputs, we destroy the current Torus 3D object instance we have and we create a new one, based on the updated inputs.
-9. [ ] Write a report on the codebase after a thorough investigation with actionable advice.
+9. [x] We will add a "Start rotation" button that toggles to "Stop rotation" while spinning. When enabled, each frame mildly rotates the current torus around the Y-axis by manipulating `vlist` values in object space by hand (no matrix multiplications), as one step in the rendering process; the flag comes from the UI element's state. We will also add a "Reset shape" button that obtains a new instance from the factory with the current settings, undoing the rotation.
+10. [x] Write a report on the codebase after a thorough investigation with actionable advice.

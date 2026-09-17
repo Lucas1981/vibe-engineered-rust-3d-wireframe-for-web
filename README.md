@@ -1,4 +1,4 @@
-# Vibe Enginereed Rust 3D Wireframe for Wasm
+# Vibe Engineered Rust 3D Wireframe for Wasm
 
 <img width="1468" height="723" alt="Screenshot 2026-09-17 at 19 39 00" src="https://github.com/user-attachments/assets/10934d42-8c38-4480-99ca-3cf6ccd9d31f" />
 
