@@ -17,6 +17,6 @@ Here are the steps in which we will set this up:
    - We can translate from object space right down to screen space in one go, keeping it as short as we can.
 5. [x] We will build a class that can yield a torus object. We can base it off the `resources/create-rings.js` file. Let's make sure it is indeed configurable in terms of sides, turns, thickness, reach and color. Since this is wireframe, we only need one color.
 6. [x] We will no longer show the line on the screen but we will show an instance of the Torus as a 3D object, projected onto the screen.
-7. [ ] We will add UI controls to our screen with which we can control the sides, turns, thickness, reach and color. These must all be numeric inputs except for the color which can be a string input accepting a hexadecimal value. If we see it is not a proper 6-hex value, we an default the chosen color to white.
-8. [ ] Each time the user changes one of the UI inputs, we destroy the current Torus 3D object instance we have and we create a new one, based on the updated inputs.
+7. [x] We will add UI controls to our screen with which we can control the sides, turns, thickness, reach and color. These must all be numeric inputs except for the color which can be a string input accepting a hexadecimal value. If we see it is not a proper 6-hex value, we an default the chosen color to white.
+8. [x] Each time the user changes one of the UI inputs, we destroy the current Torus 3D object instance we have and we create a new one, based on the updated inputs.
 9. [ ] Write a report on the codebase after a thorough investigation with actionable advice.
